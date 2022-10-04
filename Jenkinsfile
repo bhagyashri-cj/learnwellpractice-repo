@@ -13,6 +13,10 @@ pipeline {
         sh 'java -cp target/devops-app-1.0-SNAPSHOT.jar newlearnwell.app.App '
       }
     }
-    
+     stage('sanity test ') {
+      steps {
+        sh 'echo "this is good website" '
+      }
+    }
   }
 }
