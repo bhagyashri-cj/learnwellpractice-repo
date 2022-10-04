@@ -12,7 +12,7 @@ pipeline {
 
     stage('invoke learnwell class ') {
       steps {
-        sh 'java -cp target/devops-1.0-SNAPSHOT.jar learnwell.app.App '
+        sh 'java -cp target/devops-app-1.0-SNAPSHOT.jar newlearnwell.app.App '
       }
     }
     
